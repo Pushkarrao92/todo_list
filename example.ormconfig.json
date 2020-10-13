@@ -1,0 +1,20 @@
+{
+    "type": "postgres",
+    "host": "localhost",
+    "port": "5432",
+    "username": "username",
+    "password": "password",
+    "database": "todo_list_development",
+    "synchronize": true,
+    "dropSchema": false,
+    "logging": true,
+    "entities": [
+        "src/app/**/*.entity.ts"
+    ],
+    "migrations": [
+        "src/migrations/*.seed.ts"
+    ],
+    "cli": {
+        "migrationsDir": "src/migrations"
+    }
+}
